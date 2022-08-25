@@ -1,0 +1,44 @@
+
+.container{
+    display: grid;
+    
+    grid-auto-rows:minmax(200px,auto);
+    grid-template-areas: 
+    "h h h h h h "
+    "f f  n n n n"
+    "f f c c c c" 
+    "f f c c c c"
+    "r r r r r r";
+    grid-gap:10px 10px ;
+    
+
+}
+.box{
+    color: black;
+    background: aqua;
+    text-align: center;
+
+}
+.head{
+    grid-area: h;
+}
+.nav{
+    grid-area: n ;
+}
+.sideleft{
+    grid-area: f;
+}
+.content{
+    grid-area: c;
+}
+.footer{
+    grid-area: r;
+}
+.head{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:10px ;
+}
+.head div{
+    background: blue;
+}
